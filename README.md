@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+# reva's meta portfolio
 
-## Project info
+**real products for real people**
 
-**URL**: https://lovable.dev/projects/04a02b83-8b71-40cb-887e-65a980b01efd
+## what is this
 
-## How can I edit this code?
+my attempt at being a big boy about product management. instead of corporate fluff, here's what i actually know and what i'm actually building.
 
-There are several ways of editing your application.
+## what you'll find here
 
-**Use Lovable**
+- **product concepts** - detailed roadmaps for meta's next big bets
+- **my (very much a work-in-progress) process** - holy grail tier paid courses out there, but my stingy goblin brain refuses to let me part with coin...so here's the free loot i scavenged instead
+- **breakfast ideas** - stray ideas brewed over my double shot americano with oat milk (light ice please)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/04a02b83-8b71-40cb-887e-65a980b01efd) and start prompting.
+## tech stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **React 18** + **TypeScript** - because i like my code to actually work
+- **Tailwind CSS** - utility-first styling that doesn't make me want to cry
+- **Shadcn/ui** - pre-built components that look good without the headache
+- **Vite** - fast builds because waiting is for suckers
 
-**Use your preferred IDE**
+## local development
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```bash
+# clone this bad boy
+git clone https://github.com/agrawalreva/meta-product-portfolio.git
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# install dependencies
+npm install
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# start the dev server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+this bad boy lives on **Vercel** because it's free and it works. every push to main auto-deploys.
 
-**Use GitHub Codespaces**
+## contact
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+got ideas? send them to [ragrawal@ucsd.edu](mailto:ragrawal@ucsd.edu)
 
-## What technologies are used for this project?
+want to see more of my work? check out:
+- [resume](https://docs.google.com/document/d/1jzZVpmBjqll2V3Gj4JfeMpHM0ll1KYQr/edit?usp=sharing&ouid=102894175038996618722&rtpof=true&sd=true)
+- [github](https://github.com/agrawalreva)
+- [linkedin](https://www.linkedin.com/in/revaagrawal/)
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/04a02b83-8b71-40cb-887e-65a980b01efd) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*built with love and way too much coffee ☕*
