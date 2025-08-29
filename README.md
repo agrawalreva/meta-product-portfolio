@@ -14,10 +14,10 @@ my attempt at being a big boy about product management. here's what i actually k
 
 ## tech stack
 
-- **React 18** + **TypeScript** - because i like my code to actually work
-- **Tailwind CSS** - utility-first styling that doesn't make me want to cry
-- **Shadcn/ui** - pre-built components that look good without the headache
-- **Vite** - fast builds because waiting is for suckers
+- **React 18** + **TypeScript** because i like my code to actually work
+- **Tailwind CSS** styling that doesn't make me want to cry
+- **Shadcn/ui** components that look good 
+- **Vite** because waiting is for suckers
 
 ## local development
 
