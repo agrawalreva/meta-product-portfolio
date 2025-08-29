@@ -64,7 +64,7 @@ const Navigation = () => {
             </button>
             <div className="flex items-center space-x-4 ml-4">
               <button
-                onClick={() => window.open("https://docs.google.com/document/d/1jzZVpmBjqll2V3Gj4JfeMpHM0ll1KYQr/edit?usp=sharing&ouid=102894175038996618722&rtpof=true&sd=true", "_blank")}
+                onClick={() => window.open("https://drive.google.com/file/d/15ji09rYJm5xkFL56E2wY1QL7B8rM2whG/view?usp=sharing", "_blank")}
                 className="text-sm font-medium hover:text-primary transition-colors"
               >
                 <FileText className="w-4 h-4" />
