@@ -156,7 +156,7 @@ const ProcessSection = () => {
                   certifications
                 </CardTitle>
                 <CardDescription>
-                  seeee i maybe.. sort.... of know what i am talking about.. like a little bit.. atleast
+                  continuous learning in action
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
