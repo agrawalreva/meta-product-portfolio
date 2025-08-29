@@ -156,7 +156,7 @@ const ProcessSection = () => {
                   certifications
                 </CardTitle>
                 <CardDescription>
-                  continuous learning in action
+                  my continuous learning in action
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
