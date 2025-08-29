@@ -16,7 +16,7 @@ my attempt at being a big boy about product management. here's what i actually k
 
 - **React 18** + **TypeScript** because i like my code to actually work
 - **Tailwind CSS** styling that doesn't make me want to cry
-- **Shadcn/ui** components that look good 
+- **Shadcn/ui** for components
 - **Vite** because waiting is for suckers
 
 ## local development
@@ -31,11 +31,6 @@ npm install
 # start the dev server
 npm run dev
 ```
-
-## deployment
-
-this awesome portfolio lives on **Vercel** because it's free and it works. every push to main auto-deploys.
-
 ---
 
 *built with way too much coffee ☕*
