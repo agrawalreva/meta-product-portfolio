@@ -1,9 +1,8 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap, Target, TrendingUp } from "lucide-react";
+import { Zap, Rocket, Brain, Coffee } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-background relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-background relative overflow-hidden">
       {/* Animated background gradient */}
       <div className="absolute inset-0 bg-gradient-hero opacity-10 animate-pulse" />
       
@@ -15,7 +14,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-surface border border-border-bright rounded-full px-4 py-2 mb-8 animate-fade-in">
             <Zap className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">meta product portfolio // 2024</span>
+            <span className="text-sm font-medium">meta product portfolio // 2025</span>
           </div>
           
           {/* Main heading */}
@@ -27,42 +26,23 @@ const Hero = () => {
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in [animation-delay:0.4s]">
-            bold solutions for meta's next billion users. no fluff, just rapid prototyping with metrics that matter.
+            real products for real people.
           </p>
           
-          {/* Stats row */}
+          {/* What we're about */}
           <div className="flex flex-wrap justify-center gap-8 mb-12 animate-fade-in [animation-delay:0.6s]">
             <div className="flex items-center gap-2">
-              <Target className="w-5 h-5 text-accent" />
-              <span className="text-sm font-medium">5 bold concepts</span>
+              <Rocket className="w-5 h-5 text-accent" />
+              <span className="text-sm font-medium">rapid prototyping</span>
             </div>
             <div className="flex items-center gap-2">
-              <TrendingUp className="w-5 h-5 text-warning" />
-              <span className="text-sm font-medium">data-driven validation</span>
+              <Brain className="w-5 h-5 text-warning" />
+              <span className="text-sm font-medium">user-first thinking</span>
             </div>
             <div className="flex items-center gap-2">
-              <Zap className="w-5 h-5 text-primary" />
-              <span className="text-sm font-medium">rapid iteration</span>
+              <Coffee className="w-5 h-5 text-primary" />
+              <span className="text-sm font-medium">breakfast ideas</span>
             </div>
-          </div>
-          
-          {/* CTA buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:0.8s]">
-            <Button 
-              variant="hero" 
-              size="lg" 
-              className="group bg-gradient-primary hover:shadow-glow-primary transition-all duration-300"
-            >
-              explore concepts
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-border-bright hover:bg-surface-bright"
-            >
-              view process
-            </Button>
           </div>
         </div>
       </div>
