@@ -9,49 +9,57 @@ import {
   Clock,
   Users
 } from "lucide-react";
+import ErrorPage from "./ErrorPage";
+import { useState } from "react";
 
 const breakfastIdeas = [
   {
-    id: "conversation-starters",
+    id: "ai-conversation-starters",
     title: "AI conversation starters",
     subtitle: "break the ice with personalized openers",
     problem: "awkward silence in DMs. users don't know how to start meaningful conversations.",
     concept: "AI analyzes mutual interests, recent posts, shared connections. generates 3 conversation starters that feel natural, not robotic. 'saw you're into rock climbing too - ever tried bouldering at [local gym]?'",
-    impact: "35% increase in DM response rates, 50% longer conversation threads",
+    impact: "4 of my friends said hell yeah when i texted the gc",
     status: "breakfast idea"
   },
   {
-    id: "memory-lanes",
-    title: "memory lanes",
-    subtitle: "AI-curated nostalgia feeds",
-    problem: "users miss meaningful memories buried in endless content. nostalgia drives engagement but discovery is random.",
-    concept: "AI creates themed memory lanes - 'summer 2019 vibes', 'college friends era', 'travel throwbacks'. curated from your posts + friends' posts featuring you. emotional content hits different.",
-    impact: "2x time spent on platform, 70% increase in story sharing",
+    id: "threads-quote-story",
+    title: "Threads \"Quote Story\"",
+    subtitle: "cross-platform content sharing",
+    problem: "Threads feels disconnected from Instagram. users want to share Threads content but it's stuck in a separate app.",
+    concept: "you can take someone's post + drop it straight into your IG story with a reaction (like TikTok stitches but inside Meta). collapses the wall between IG + Threads, finally making Threads relevant because it leaks into where people actually are.",
+    impact: "4 of my friends said hell yeah when i texted the gc",
     status: "breakfast idea"
   },
   {
-    id: "vibe-check",
-    title: "vibe check rooms", 
-    subtitle: "real-time mood-based group chats",
-    problem: "group chats become stale, irrelevant. users want connection based on current mood, not just geography/history.",
-    concept: "join temporary rooms based on current vibe - 'need motivation', 'procrastinating', 'can't sleep', 'good news to share'. AI matches users with similar energy. rooms dissolve after 24hrs.",
-    impact: "3x daily active engagement, 85% user retention in first week",
+    id: "timezone-sync",
+    title: "Time-Zone Sync Layer",
+    subtitle: "global team coordination",
+    problem: "global teams struggle with timezone coordination. someone always forgets the calendar math.",
+    concept: "Workplace automatically translates posts, standups, and deadlines into each participant's local time. no more 9pm standups because someone forgot the calendar math.",
+    impact: "eliminates 90% of timezone confusion in my experience",
     status: "breakfast idea"
   },
   {
-    id: "expertise-exchange",
-    title: "expertise exchange",
-    subtitle: "micro-mentorship marketplace",
-    problem: "knowledge sharing happens randomly. experts overwhelmed, learners struggle to find right person.",
-    concept: "15-minute expertise exchanges. 'teach me basic photoshop' meets 'i need career advice'. AI matches based on skills + availability. gamified with reputation system.",
-    impact: "new revenue stream, 60% user skill development metric increase",
+    id: "oculus-overlay",
+    title: "Oculus Productivity Overlay",
+    subtitle: "augmented reality workspace",
+    problem: "VR headsets replace your world completely. people want productivity tools that enhance reality, not replace it.",
+    concept: "instead of replacing your world, Quest projects your Slack/Notion/Figma as floating layers in your actual room. basically turns any couch/kitchen table into a multi-monitor setup.",
+    impact: "could save me $500 on a second monitor (if we hypothetically assume i just get gifted the very expensive technology in question)",
     status: "breakfast idea"
   }
 ];
 
 const BreakfastIdeas = () => {
+  const [showError, setShowError] = useState(false);
+
+  if (showError) {
+    return <ErrorPage onBack={() => setShowError(false)} />;
+  }
+
   return (
-    <section className="py-20 bg-gradient-surface">
+    <section id="breakfast" className="py-20 bg-gradient-surface">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -64,7 +72,9 @@ const BreakfastIdeas = () => {
             <span className="gradient-text">morning brainstorms</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            raw concepts brewed over coffee. not fully baked, but potential is there. sometimes the best ideas start simple.
+            stray ideas brewed over my double shot americano with oat milk
+            <br />
+            <span className="text-lg">(light ice please)</span>
           </p>
 
           {/* Disclaimer */}
@@ -131,11 +141,12 @@ const BreakfastIdeas = () => {
 
               {/* Actions */}
               <div className="flex gap-2">
-                <Button variant="concept" size="sm" className="flex-1">
-                  <Users className="w-3 h-3" />
-                  validate with users
-                </Button>
-                <Button variant="outline" size="sm" className="flex-1">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="flex-1"
+                  onClick={() => setShowError(true)}
+                >
                   <Clock className="w-3 h-3" />
                   research sprint
                 </Button>
@@ -151,11 +162,16 @@ const BreakfastIdeas = () => {
               <span className="gradient-text">got ideas brewing?</span>
             </h3>
             <p className="text-muted-foreground mb-6">
-              best products start as napkin sketches. these breakfast concepts could be meta's next big bet with proper validation.
+              napkin sketches appreciated too ;)
             </p>
-            <Button variant="hero" size="lg" className="group">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="group"
+              onClick={() => window.open("mailto:ragrawal@ucsd.edu", "_blank")}
+            >
               <Zap className="w-4 h-4" />
-              let's prototype something
+              send me ideas
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
