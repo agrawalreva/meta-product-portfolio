@@ -1,12 +1,18 @@
-import { Card } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { 
   Search, 
   Lightbulb, 
   Target, 
   TrendingUp,
   RotateCcw,
-  Clock
+  Clock,
+  ExternalLink,
+  Award,
+  BookOpen,
+  Play,
+  FileText
 } from "lucide-react";
 
 const processSteps = [
@@ -49,12 +55,12 @@ const processSteps = [
 
 const ProcessSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section id="process" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black mb-4">
-            <span className="gradient-text">the process</span>
+            <span className="gradient-text">my (very much a work-in-progress) process</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             structured approach to product innovation. identify, prototype, validate, iterate. rinse and repeat.
@@ -128,6 +134,136 @@ const ProcessSection = () => {
             <div className="text-3xl font-bold text-warning mb-2">48hr</div>
             <div className="text-sm text-muted-foreground">iteration cycles</div>
           </Card>
+        </div>
+
+        {/* Certificates & Resources */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-black mb-4">
+              <span className="gradient-text">certificates & resources</span>
+            </h3>
+            <p className="text-lg text-muted-foreground">
+              holy grail tier paid courses out there, but my stingy goblin brain refuses to let me part with coin...so here's the free loot i scavenged instead
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Certificates */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Award className="w-5 h-5 text-primary" />
+                  certifications
+                </CardTitle>
+                <CardDescription>
+                  seeee i maybe.. sort.... of know what i am talking about.. like a little bit.. atleast
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center justify-between p-3 bg-surface-bright rounded-lg">
+                  <div>
+                    <h4 className="font-semibold">AI for Product Management</h4>
+                    <p className="text-sm text-muted-foreground">Pendo</p>
+                  </div>
+                  <Button 
+                    variant="ghost" 
+                    size="sm"
+                    onClick={() => window.open("https://www.credly.com/badges/9392b22b-9276-48c3-88d4-8c831102b162/public_url", "_blank")}
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                  </Button>
+                </div>
+                <div className="flex items-center justify-between p-3 bg-surface-bright rounded-lg">
+                  <div>
+                    <h4 className="font-semibold">Product-Led Fundamentals</h4>
+                    <p className="text-sm text-muted-foreground">Product-Led Growth</p>
+                  </div>
+                  <Button 
+                    variant="ghost" 
+                    size="sm"
+                    onClick={() => window.open("https://drive.google.com/file/d/1o9uP_2slCwTRBi1VTLQvydXBwiszeWQw/view?usp=sharing", "_blank")}
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                  </Button>
+                </div>
+                <div className="flex items-center justify-between p-3 bg-surface-bright rounded-lg">
+                  <div>
+                    <h4 className="font-semibold">Product Roadmapping Micro-Certification (PRC)™️</h4>
+                    <p className="text-sm text-muted-foreground">Product School</p>
+                  </div>
+                  <Badge variant="outline" className="text-xs mr-2">
+                    in progress
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Resources */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <BookOpen className="w-5 h-5 text-accent" />
+                  resources that actually help
+                </CardTitle>
+                <CardDescription>
+                  books, videos, and articles that shaped my thinking
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <Button 
+                  variant="ghost" 
+                  className="w-full justify-start p-3 h-auto"
+                  onClick={() => window.open("https://www.youtube.com/watch?v=1hHMwLxN6EM", "_blank")}
+                >
+                  <Play className="w-4 h-4 mr-3 text-primary" />
+                  <div className="text-left">
+                    <div className="font-semibold">How to Build a Product</div>
+                    <div className="text-sm text-muted-foreground">Lenny Rachitsky</div>
+                  </div>
+                  <ExternalLink className="w-4 h-4 ml-auto text-muted-foreground" />
+                </Button>
+
+                <Button 
+                  variant="ghost" 
+                  className="w-full justify-start p-3 h-auto"
+                  onClick={() => window.open("https://xmind.ai/share/PnDamsJH", "_blank")}
+                >
+                  <FileText className="w-4 h-4 mr-3 text-accent" />
+                  <div className="text-left">
+                    <div className="font-semibold">Product Management Competencies</div>
+                    <div className="text-sm text-muted-foreground">Paweł Huryn</div>
+                  </div>
+                  <ExternalLink className="w-4 h-4 ml-auto text-muted-foreground" />
+                </Button>
+
+                <Button 
+                  variant="ghost" 
+                  className="w-full justify-start p-3 h-auto"
+                  onClick={() => window.open("https://hellopm.co/top-pm-resources/", "_blank")}
+                >
+                  <Play className="w-4 h-4 mr-3 text-warning" />
+                  <div className="text-left">
+                    <div className="font-semibold">Top PM Resources</div>
+                    <div className="text-sm text-muted-foreground">HelloPM</div>
+                  </div>
+                  <ExternalLink className="w-4 h-4 ml-auto text-muted-foreground" />
+                </Button>
+
+                <Button 
+                  variant="ghost" 
+                  className="w-full justify-start p-3 h-auto"
+                  onClick={() => window.open("https://www.amazon.com/Inspired-Create-Tech-Products-Customers/dp/1119387507", "_blank")}
+                >
+                  <BookOpen className="w-4 h-4 mr-3 text-secondary" />
+                  <div className="text-left">
+                    <div className="font-semibold">Inspired</div>
+                    <div className="text-sm text-muted-foreground">Marty Cagan</div>
+                  </div>
+                  <ExternalLink className="w-4 h-4 ml-auto text-muted-foreground" />
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
