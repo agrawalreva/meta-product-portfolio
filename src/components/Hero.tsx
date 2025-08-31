@@ -26,7 +26,7 @@ const Hero = () => {
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in [animation-delay:0.4s]">
-            real products for real people.
+            products that matter for people who matter.
           </p>
           
           {/* What we're about */}
