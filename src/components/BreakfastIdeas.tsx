@@ -28,7 +28,7 @@ const breakfastIdeas = [
     subtitle: "cross-platform content sharing",
     problem: "Threads feels disconnected from Instagram. users want to share Threads content but it's stuck in a separate app.",
     concept: "you can take someone's post + drop it straight into your IG story with a reaction (like TikTok stitches but inside Meta). collapses the wall between IG + Threads, finally making Threads relevant because it leaks into where people actually are.",
-    impact: "4 of my friends said hell yeah when i texted the gc",
+    impact: "unlocks Threads' potential by leveraging Instagram's 2B+ user base and existing content creation habits",
     status: "breakfast idea"
   },
   {
